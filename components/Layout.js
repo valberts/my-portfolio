@@ -6,7 +6,7 @@ export default function Layout(props) {
     const { children } = props
     return (
         <div className="flex min-h-screen justify-center">
-            <div className="p-4 max-w-[600px]">
+            <div className="px-[25%] p-2">
                 <Header />
                 <main>{children}</main>
                 <Footer />
