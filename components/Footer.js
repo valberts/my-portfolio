@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div className="text-center">
+        <div className="text-center px-[20%] mt-8">
             <p>My links:</p>
             <div className="flex justify-center">
                 <a
@@ -33,7 +33,7 @@ export default function Footer() {
                     </a>
                 </i>
             </p>
-            <h4 className="font-semibold">Join my mailing list:</h4>
+            <h4 className="font-semibold mt-8">Join my mailing list:</h4>
             <div className="flex justify-center gap-2">
                 <input
                     type="text"

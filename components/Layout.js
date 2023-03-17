@@ -6,9 +6,9 @@ export default function Layout(props) {
     const { children } = props
     return (
         <div className="flex min-h-screen justify-center">
-            <div className="px-[25%] p-2">
+            <div className="p-2">
                 <Header />
-                <main>{children}</main>
+                <main className="px-[20%]">{children}</main>
                 <Footer />
             </div>
         </div>
