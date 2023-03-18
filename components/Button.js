@@ -16,7 +16,7 @@ const Button = () => {
             onClick={() =>
                 theme == 'dark' ? setTheme('light') : setTheme('dark')
             }
-            className="px-3 py-2 -my-2 underline text-emerald-500 hover:text-emerald-600"
+            className="px-3 py-2 -my-2 -mr-3 underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
         >
             {theme == 'dark' ? 'Light Mode' : 'Dark Mode'}
         </button>

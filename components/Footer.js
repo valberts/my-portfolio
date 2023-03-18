@@ -9,7 +9,7 @@ export default function Footer() {
                     href="https://www.linkedin.com/in/vincentalbertsson/"
                     target="_blank"
                     rel="noreferrer"
-                    className="py-2 pr-2 underline text-emerald-500 hover:text-emerald-600"
+                    className="py-2 px-2 underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
                 >
                     LinkedIn
                 </a>
@@ -17,7 +17,7 @@ export default function Footer() {
                     href="https://github.com/valberts"
                     target="_blank"
                     rel="noreferrer"
-                    className="py-2 pr-2 underline text-emerald-500 hover:text-emerald-600"
+                    className="py-2 px-2 underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
                 >
                     GitHub
                 </a>
@@ -27,7 +27,7 @@ export default function Footer() {
                     Get in touch via email:{' '}
                     <a
                         href="mailto:albertsson.vincent@gmail.com"
-                        className="underline text-emerald-500 hover:text-emerald-600"
+                        className="underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
                     >
                         albertsson.vincent@gmail.com
                     </a>
@@ -38,9 +38,9 @@ export default function Footer() {
                 <input
                     type="text"
                     placeholder="Email Address"
-                    className="w-2/3 px-2 py-1 border border-solid border-gray-300 rounded-md outline-blue-200 outline-offset-2 dark:bg-[#1e1f26]"
+                    className="w-2/3 px-2 py-1 border border-solid border-gray-300 rounded-md outline-blue-200 outline-offset-2 bg-gray-50 dark:bg-[#1e1f26]"
                 />
-                <button className="px-2 py-1 bg-emerald-500 rounded-md text-white hover:bg-emerald-600">
+                <button className="px-2 py-1 bg-emerald-500 dark:bg-emerald-600 rounded-md text-white hover:bg-emerald-600 dark:hover:bg-emerald-700">
                     Subscribe
                 </button>
             </div>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
     return (
@@ -18,19 +19,49 @@ export default function Home() {
             </Head>
             <main>
                 <div className="text-center">
-                    <h1 className="text-3xl mt-8">
-                        <span className="underline">Vincent Albertsson</span> 🧙
+                    <h1 className="text-3xl mt-10">
+                        <span className="underline text-2xl">
+                            Vincent Albertsson
+                        </span>{' '}
+                        🧙
                     </h1>
                     <p className="mt-8">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        I'm Vincent, and I{' '}
+                        <span className="line-through opacity-50">
+                            work magic
+                        </span>{' '}
+                        write code.
+                    </p>
+                    <p className="mt-8">
+                        My goal is to run a successful company and reach $10,000
+                        a month by 2025. A lofty goal, but worth a shot.
+                    </p>
+                    <p className="mt-8">
+                        There is still a ways to go, but I want to take it more
+                        seriously and start a{' '}
+                        <span className="italic">
+                            12 projects in 12 months challenge
+                        </span>
+                        . Check out the{' '}
+                        <Link
+                            href="/blog"
+                            className="underline cursor-pointer text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
+                        >
+                            blog
+                        </Link>{' '}
+                        for more info. I'll add small updates or new things I
+                        learn there.
+                    </p>
+                    <p className="mt-8">
+                        Check out the{' '}
+                        <Link
+                            href="/projects"
+                            className="underline cursor-pointer text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
+                        >
+                            projects
+                        </Link>{' '}
+                        page for stuff that I've made, which will be updated as
+                        I work toward the challenge.
                     </p>
                 </div>
             </main>
