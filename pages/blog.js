@@ -1,18 +1,69 @@
-import React from 'react'
+import PostCard from '@/components/PostCard'
+import fs from 'fs'
+import matter from 'gray-matter'
+import Image from 'next/image'
+import Link from 'next/link'
 
-export default function Blog() {
+export default function Blog({ posts }) {
     return (
-        <div>
+        <div className="">
             <h1 className="text-2xl mt-10 text-center underline">Blog</h1>
-            <p className="mt-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div className="mt-8">
+                {posts.map((post) => {
+                    //extract slug and frontmatter
+                    const { slug, frontmatter } = post
+                    //extract frontmatter properties
+                    const { title, description, category, date, tags } =
+                        frontmatter
+
+                    //JSX for individual blog listing
+                    return (
+                        <PostCard
+                            key={title}
+                            slug={slug}
+                            title={title}
+                            description={description}
+                            category={category}
+                            date={date}
+                            tags={tags}
+                        />
+                    )
+                })}
+            </div>
         </div>
     )
+}
+
+//Generating the Static Props for the Blog Page
+export async function getStaticProps() {
+    // get list of files from the posts folder
+    const files = fs.readdirSync('posts')
+
+    // get frontmatter & slug from each post
+    const posts = files.map((fileName) => {
+        const slug = fileName.replace('.md', '')
+        const readFile = fs.readFileSync(`posts/${fileName}`, 'utf-8')
+        const { data: frontmatter } = matter(readFile)
+
+        return {
+            slug,
+            frontmatter,
+        }
+    })
+
+    posts.sort((postA, postB) => {
+        const {
+            frontmatter: { date: dateA },
+        } = postA
+        const {
+            frontmatter: { date: dateB },
+        } = postB
+        return new Date(dateB).getTime() - new Date(dateA).getTime()
+    })
+    // Return the pages static props
+    return {
+        props: {
+            posts,
+        },
+    }
 }
