@@ -23,7 +23,9 @@ export default function Home() {
                         <span className="underline text-2xl">
                             Vincent Albertsson
                         </span>{' '}
-                        🧙
+                        <span className="duration-300 hover:opacity-70">
+                            🧙
+                        </span>
                     </h1>
                     <p className="mt-8">
                         I'm Vincent, and I{' '}

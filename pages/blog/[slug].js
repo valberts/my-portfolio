@@ -1,5 +1,6 @@
 import fs from 'fs'
 import matter from 'gray-matter'
+import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 
 // The page for each post
@@ -18,6 +19,10 @@ export default function Post({ frontmatter, content }) {
                 {new Date(date).toLocaleDateString('en-US', options)}
             </p>
             <ReactMarkdown className="mt-8">{content}</ReactMarkdown>
+            <div className="items-center justify-center flex gap-5 mt-8">
+                <Link href="/">Previous Post</Link>
+                <Link href="/">Next Post</Link>
+            </div>
         </div>
     )
 }

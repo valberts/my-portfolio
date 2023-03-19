@@ -33,14 +33,14 @@ export default function Footer() {
                     </a>
                 </i>
             </p>
-            <h4 className="font-semibold mt-8">Join my mailing list:</h4>
-            <div className="flex justify-center gap-2">
+            <h4 className="font-semibold mt-4">Join my mailing list:</h4>
+            <div className="flex justify-center gap-2 mt-4 mb-1">
                 <input
                     type="text"
                     placeholder="Email Address"
                     className="w-2/3 px-2 py-1 border border-solid border-gray-300 rounded-md outline-blue-200 outline-offset-2 bg-gray-50 dark:bg-[#1e1f26]"
                 />
-                <button className="px-2 py-1 bg-emerald-500 dark:bg-emerald-600 rounded-md text-white hover:bg-emerald-600 dark:hover:bg-emerald-700">
+                <button className="px-2 py-1 bg-emerald-500 dark:bg-emerald-600 rounded-md text-white hover:bg-emerald-600 dark:hover:bg-emerald-700 duration-150">
                     Subscribe
                 </button>
             </div>
