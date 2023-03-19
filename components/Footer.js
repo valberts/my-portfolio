@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div className="text-center px-[20%] mt-8">
+        <div className="text-center sm:px-[20%] mt-8 text-lg">
             <p>My links:</p>
             <div className="flex justify-center">
                 <a
@@ -27,7 +27,7 @@ export default function Footer() {
                     Get in touch via email:{' '}
                     <a
                         href="mailto:albertsson.vincent@gmail.com"
-                        className="underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
+                        className="underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300 break-words"
                     >
                         albertsson.vincent@gmail.com
                     </a>

@@ -5,7 +5,7 @@ import Button from './Button'
 
 export default function Header() {
     return (
-        <div className="flex flex-row justify-between px-5 text-sm">
+        <div className="flex flex-row justify-between px-2 sm:px-5">
             <div className="py-1">
                 <Link
                     href="/"

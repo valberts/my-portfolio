@@ -3,8 +3,8 @@ import React from 'react'
 export default function Projects() {
     return (
         <div>
-            <h1 className="text-2xl mt-10 text-center underline">Projects</h1>
-            <p className="mt-8">
+            <h1 className="text-3xl mt-10 text-center underline">Projects</h1>
+            <p className="mt-8 text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris

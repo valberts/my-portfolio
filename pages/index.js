@@ -17,10 +17,10 @@ export default function Home() {
                 />
                 <link rel="icon" href="/wizard.ico" />
             </Head>
-            <main>
+            <main className="text-lg">
                 <div className="text-center">
-                    <h1 className="text-3xl mt-10">
-                        <span className="underline text-2xl">
+                    <h1 className="text-4xl mt-10">
+                        <span className="underline text-3xl">
                             Vincent Albertsson
                         </span>{' '}
                         <span className="duration-300 hover:opacity-70">
@@ -36,7 +36,7 @@ export default function Home() {
                     </p>
                     <p className="mt-8">
                         My goal is to run a successful company and reach $10,000
-                        a month by 2025. A lofty goal, but worth a shot.
+                        a month by 2025.
                     </p>
                     <p className="mt-8">
                         There is still a ways to go, but I want to take it more
@@ -51,8 +51,7 @@ export default function Home() {
                         >
                             blog
                         </Link>{' '}
-                        for more info. I'll add small updates or new things I
-                        learn there.
+                        for more info.
                     </p>
                     <p className="mt-8">
                         Check out the{' '}
@@ -62,8 +61,8 @@ export default function Home() {
                         >
                             projects
                         </Link>{' '}
-                        page for stuff that I've made, which will be updated as
-                        I work toward the challenge.
+                        page for things I've made, which will be updated as I
+                        work toward the challenge.
                     </p>
                 </div>
             </main>

@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function Blog({ posts }) {
     return (
         <div className="">
-            <h1 className="text-2xl mt-10 text-center underline">Blog</h1>
+            <h1 className="text-3xl mt-10 text-center underline">Blog</h1>
             <div className="mt-8">
                 {posts.map((post) => {
                     //extract slug and frontmatter

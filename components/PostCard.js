@@ -13,11 +13,13 @@ export default function PostCard(props) {
         <>
             <Link href={`/blog/${slug}`} className="">
                 <div className="mb-4 p-4 rounded-lg border border-gray-300 dark:border-none bg-gray-100 dark:bg-[#191B1F] text-center shadow-lg hover:shadow-xl dark:shadow-none dark:hover:opacity-80">
-                    <h1 className="text-lg">{title}</h1>{' '}
-                    <p className="mb-2 text-xs">
+                    <h1 className="text-xl">{title}</h1>{' '}
+                    <p className="mb-2 text-sm">
                         {new Date(date).toLocaleDateString('en-US', options)}
                     </p>
-                    <p className="line-clamp-3 text-xs">{description}</p>
+                    <p className="line-clamp-3 sm:line-clamp-2 text-xs leading-relaxed">
+                        {description}
+                    </p>
                 </div>
             </Link>
         </>
