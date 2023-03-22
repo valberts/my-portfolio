@@ -9,7 +9,7 @@ export default function Header() {
             <div className="py-1">
                 <Link
                     href="/"
-                    className="py-2 pr-3 underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
+                    className="py-2 pr-3 underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300 select-none"
                 >
                     Home
                 </Link>
@@ -17,13 +17,13 @@ export default function Header() {
             <div className="py-1">
                 <Link
                     href="/projects"
-                    className="py-2 px-3 underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
+                    className="py-2 px-3 underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300 select-none"
                 >
                     Projects
                 </Link>
                 <Link
                     href="/blog"
-                    className="py-2 px-3 underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
+                    className="py-2 px-3 underline text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300 select-none"
                 >
                     Blog
                 </Link>

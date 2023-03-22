@@ -42,13 +42,13 @@ export default function Post({ frontmatter, content, adjacentPosts }) {
             <div className="justify-center flex gap-1 mt-8">
                 <Link
                     href={`/blog/${previousPost}`}
-                    className="py-1 px-1.5 rounded-md text-xs border border-gray-300 text-black shadow-md dark:border-none dark:bg-gray-300 dark:shadow-none hover:shadow-lg dark:hover:opacity-70 duration-150"
+                    className="py-1 px-1.5 rounded-md text-xs border border-gray-300 text-black shadow-md dark:border-none dark:bg-gray-300 dark:shadow-none hover:shadow-lg dark:hover:opacity-70 duration-150 select-none"
                 >
                     Previous Post
                 </Link>
                 <Link
                     href={`/blog/${nextPost}`}
-                    className="py-1 px-1.5 rounded-md text-xs border border-gray-300 text-black shadow-md dark:border-none dark:bg-gray-300 dark:shadow-none hover:shadow-lg dark:hover:opacity-70 duration-150"
+                    className="py-1 px-1.5 rounded-md text-xs border border-gray-300 text-black shadow-md dark:border-none dark:bg-gray-300 dark:shadow-none hover:shadow-lg dark:hover:opacity-70 duration-150 select-none"
                 >
                     Next Post
                 </Link>
