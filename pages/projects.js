@@ -1,18 +1,67 @@
-import React from 'react'
+import ProjectCard from '@/components/ProjectCard'
+import fs from 'fs'
+import matter from 'gray-matter'
 
-export default function Projects() {
+export default function Projects({ projects }) {
     return (
-        <div>
+        <div className="">
             <h1 className="text-3xl mt-10 text-center underline">Projects</h1>
-            <p className="mt-8 text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div className="mt-8">
+                {projects.map((project) => {
+                    //extract slug and frontmatter
+                    const { slug, frontmatter } = project
+                    //extract frontmatter properties
+                    const { title, description, category, date, tags } =
+                        frontmatter
+
+                    //JSX for individual project listing
+                    return (
+                        <ProjectCard
+                            key={title}
+                            slug={slug}
+                            title={title}
+                            description={description}
+                            category={category}
+                            date={date}
+                            tags={tags}
+                        />
+                    )
+                })}
+            </div>
         </div>
     )
+}
+
+//Generating the Static Props for the Projects Page
+export async function getStaticProps() {
+    // get list of files from the projects folder
+    const files = fs.readdirSync('projects')
+
+    // get frontmatter & slug from each project
+    const projects = files.map((fileName) => {
+        const slug = fileName.replace('.md', '')
+        const readFile = fs.readFileSync(`projects/${fileName}`, 'utf-8')
+        const { data: frontmatter } = matter(readFile)
+
+        return {
+            slug,
+            frontmatter,
+        }
+    })
+
+    projects.sort((projectA, projectB) => {
+        const {
+            frontmatter: { date: dateA },
+        } = projectA
+        const {
+            frontmatter: { date: dateB },
+        } = projectB
+        return new Date(dateB).getTime() - new Date(dateA).getTime()
+    })
+    // Return the pages static props
+    return {
+        props: {
+            projects,
+        },
+    }
 }
