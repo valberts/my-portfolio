@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@tailwindcss/line-clamp": "^0.4.2",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
