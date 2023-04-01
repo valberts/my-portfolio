@@ -31,7 +31,7 @@ export default function Subscribe() {
 
         // 5. Clear the input value and show a success message.
         inputEl.current.value = ''
-        setMessage('Success! 🎉 Thank you for subscribing to the newsletter')
+        setMessage('Success! 🎉 Thank you for subscribing to the newsletter!')
     }
 
     return (
