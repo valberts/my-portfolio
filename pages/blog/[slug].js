@@ -36,7 +36,7 @@ export default function Post({ frontmatter, content, adjacentPosts }) {
             <p className="text-center">
                 {new Date(date).toLocaleDateString('en-US', options)}
             </p>
-            <ReactMarkdown className="mt-8 leading-loose">
+            <ReactMarkdown className="mt-6 leading-loose markdown">
                 {content}
             </ReactMarkdown>
             <div className="justify-center flex gap-1 mt-8">

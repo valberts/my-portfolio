@@ -57,7 +57,7 @@ export default function Project({ frontmatter, content, adjacentProjects }) {
                     Repo
                 </a>
             </div>
-            <ReactMarkdown className="mt-8 leading-loose">
+            <ReactMarkdown className="mt-6 leading-loose markdown">
                 {content}
             </ReactMarkdown>
             <div className="justify-center flex gap-1 mt-8">
