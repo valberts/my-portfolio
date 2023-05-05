@@ -16,7 +16,7 @@ I was inspired by Ben from tinyprojects.dev and Alex West. Both are people who h
 
 ### Tech Stack
 
-For this project, and probably any web project I will undertake in the future, I’m using Next.js. I really like Next.js and it’s the first framework that has really clicked for me. Alongside Next.js, I’m using Tailwind CSS which is also just so great that I don’t even know how to express it. Tailwind CSS just makes it so much easier and the developer experience is smooth. I don’t need to be constantly switching between the files and worrying about what classname I’m using for elements, and it has also given me a good understanding of how CSS and the DOM works through experimentation with it.
+For this project, and probably any web project I will undertake in the future, I’m using Next.js. I really like Next.js and it’s the first framework that has really clicked for me. Alongside Next.js, I’m using Tailwind CSS which is also just so great that I don’t even know how to express it. Tailwind CSS just makes it so much easier to handle styling and the developer experience is smooth. I don’t need to be constantly switching between the files and worrying about what classname I’m using for elements, and it has also given me a good understanding of how CSS and the DOM works through experimentation with it.
 
 For the blog and project posts, I am using markdown files that are saved with the project files and that sort of serves as the backend. I’m not using a proper backend since it’s pretty much just a static site where only the blog posts and their content could change every few days or whenever I post. I do plan on making a proper fullstack project in the future though.
 
