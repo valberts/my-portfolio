@@ -29,30 +29,23 @@ export default function Home() {
                         </span>
                     </h1>
                     <p className="mt-8">
-                        I'm Vincent, and I{' '}
-                        <span className="line-through opacity-50">
-                            work magic
+                        Hi, I&apos;m Vincent and I{' '}
+                        <span className="wave-text opacity-20 duration-300 hover:opacity-100">
+                            <span>w</span>
+                            <span>o</span>
+                            <span>r</span>
+                            <span>k</span>&nbsp;<span>m</span>
+                            <span>a</span>
+                            <span>g</span>
+                            <span>i</span>
+                            <span>c</span>
                         </span>{' '}
-                        write code.
+                        <span className="animated-text"></span>
                     </p>
+
                     <p className="mt-8">
-                        My goal is to run a successful company and reach $10,000
-                        a month by 2025.
-                    </p>
-                    <p className="mt-8">
-                        There is still a ways to go, but I want to take it more
-                        seriously and start a{' '}
-                        <span className="italic">
-                            12 projects in 12 months challenge
-                        </span>
-                        . Check out the{' '}
-                        <Link
-                            href="/blog"
-                            className="underline cursor-pointer text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
-                        >
-                            blog
-                        </Link>{' '}
-                        for more info.
+                        This website serves as a place to collect what I&apos;ve
+                        been working on and what I learned along the way.
                     </p>
                     <p className="mt-8">
                         Check out the{' '}
@@ -62,8 +55,18 @@ export default function Home() {
                         >
                             projects
                         </Link>{' '}
-                        page for things I've made, which will be updated as I
-                        work toward the challenge.
+                        page for projects I want to show off.
+                    </p>
+                    <p className="mt-8">
+                        Check out the{' '}
+                        <Link
+                            href="/blog"
+                            className="underline cursor-pointer text-emerald-600 dark:text-emerald-200 hover:text-emerald-700 dark:hover:text-emerald-300"
+                        >
+                            blog
+                        </Link>{' '}
+                        for my thoughts, and what I&apos;ve learned or found
+                        interesting.
                     </p>
                 </div>
             </main>

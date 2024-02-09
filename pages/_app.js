@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/main.css'
 import Layout from '../components/Layout'
 import { ThemeProvider } from 'next-themes'
 
